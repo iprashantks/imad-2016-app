@@ -40,14 +40,16 @@ function createTemplate(data) {
                     </div>
                 </header>
                 <hr/>
-                <h3>
-                    ${heading}
-                </h3>
-                <div>
-                    ${date.toDateString()}
-                </div>
-                <div>
-                    ${content}
+                <div class="articleArea">
+                    <h3>
+                        ${heading}
+                    </h3>
+                    <div>
+                        ${date.toDateString()}
+                    </div>
+                    <div>
+                        ${content}
+                    </div>
                 </div>
             </div>
         </body>

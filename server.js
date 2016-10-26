@@ -31,12 +31,14 @@ function createTemplate(data) {
         </head>
         <body>
             <div class="container">
-                <div>
-                    <a href="/">Home</a>
-                </div>
-                 <div style="float: right; text-align: right; margin-right:20px;">
-                    Top Right Links
-                </div>
+                <header>
+                    <div style="float: right; text-align: right;">
+                        Top Right Links
+                    </div>
+                    <div>
+                        <a href="/">Home</a>
+                    </div>
+                </header>
                 <hr/>
                 <h3>
                     ${heading}

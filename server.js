@@ -31,7 +31,7 @@ function createTemplate(data) {
         </head>
         <body>
             <div class="container">
-                <header style="background:black; display: block">
+                <header>
                     <div style="float: right; text-align: right;">
                         Top Right Links
                     </div>

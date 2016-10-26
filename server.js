@@ -34,7 +34,7 @@ function createTemplate(data) {
                 <div>
                     <a href="/">Home</a>
                 </div>
-                 <div style="float: right; text-align: right;">
+                 <div style="float: right; text-align: right; margin-right:20px;">
                     Top Right Links
                 </div>
                 <hr/>

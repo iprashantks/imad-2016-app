@@ -36,3 +36,18 @@ h3 {
 	color: white;
 	text-shadow: 1px 1px 3px #080808;
 }
+
+table{
+	width: 100%;
+	text-align: center;
+}
+
+th{
+	color: #727071;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+td{
+	padding: 3px 10px;
+}

@@ -14,14 +14,35 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-    title : 'Article One | Prashant',
-    heading : 'Article One',
-    date : 'Oct 16, 2016',
-    content : `
-        <p>Hello world</p>
-        <p>This is para one</p>
-    `
+var articles = {
+    'article-one' : {
+        title : 'Article One | Prashant',
+        heading : 'Article One',
+        date : 'Oct 16, 2016',
+        content : `
+            <p>Hello world</p>
+            <p>This is para one</p>
+        `
+    },
+    'article-two' : {
+        title : 'Article Two | Rahul',
+        heading : 'Article Two',
+        date : 'Oct 18, 2016',
+        content : `
+            <p>Hello world</p>
+            <p>This is para one of article 2</p>
+        `
+    },
+    'article-three' : {
+        title : 'Article Three | Neha',
+        heading : 'Article Three',
+        date : 'Oct 1, 2016',
+        content : `
+            <p>Hello world</p>
+            <p>This is para one of article 3</p>
+        `
+    }
+    
 };
 
 function createTemplate(data) {
@@ -79,16 +100,8 @@ app.get('/test-db', function (req, res) {
     });
 });
 
-app.get('/article-one',function(req, res) {
-    res.send(createTemplate(articleOne));
-});
-
-app.get('/article-two',function(req, res) {
-    res.send('This will serve article-two');   
-});
-
-app.get('/article-three',function(req, res) {
-    res.send('This will serve article-three');   
+app.get('/:articleName',function(req, res) {
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {

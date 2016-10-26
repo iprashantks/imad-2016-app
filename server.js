@@ -51,6 +51,15 @@ function createTemplate(data) {
                         ${content}
                     </div>
                 </div>
+                <div class="footer">
+        			<table>
+		        		<tr>
+				        	<th>Contact Us</th>
+					        <th>About Us</th>
+			        		<th>Our Founders</th>
+			        	</tr>
+		        	</table>
+	           	</div>
             </div>
         </body>
         </html>

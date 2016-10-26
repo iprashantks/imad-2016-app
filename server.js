@@ -34,6 +34,9 @@ function createTemplate(data) {
                 <div>
                     <a href="/">Home</a>
                 </div>
+                 <div style="float: right; text-align: right;">
+                    Top Right Links
+                </div>
                 <hr/>
                 <h3>
                     ${heading}

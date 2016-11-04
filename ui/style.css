@@ -24,6 +24,11 @@ body {
     margin: 10px;
 }
 
+.box {
+    border: 2px solid black;
+    display: block;
+}
+
 .footer {
     clear: both;
 	padding-top: 35px;
